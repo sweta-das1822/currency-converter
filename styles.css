@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #271727;
+}
+
+body {
+    background-color: #FFC2C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #F7EDF0;
+    width: 90%;
+    max-width: 420px;
+    min-height: 60vh;
+    border-radius: 0.80rem;
+}
+
+h2 {
+    font-family: "Archivo", sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.input-box p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.input-box input {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 90%;
+    height: 2.2rem;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding-left: 0.5rem;
+}
+
+.country-box {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.from-country,
+.to-country {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.flag img {
+    width: 70px;
+    height: auto;
+}
+
+.country-list {
+    width: 4rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+}
+
+.conversion {
+    margin: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.result-box {
+    width: 86%;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+}
+
+#btn {
+    width: 92%;
+    margin: 1rem;
+    height: 3rem;
+    background-color: #271727;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#btn:active {
+    background-color: #5f395f;
+    transform: scale(0.95);
+}
+
+#swap-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s linear;
+}
+
+#swap-btn:active {
+    background-color: #b494b1;
+    transform: scale(0.95);
+}

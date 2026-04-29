@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency Convertor</h2>
+
+        <div class="input-box">
+            <p>Enter the amount:</p>
+            <input type="text" id="input_value" value="1">
+        </div>
+
+        <div class="country-box">
+             
+            <div class="from-country">
+                <div class="flag">
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                </div>
+                <div class="dropdown-flags">
+                    <select class="country-list-access" name = "from">
+                    </select>
+                </div>
+            </div>
+
+            <div>
+            <button id="swap-btn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+            </div>
+
+            <div class="to-country">
+                <div class="flag">
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                </div>
+                <div class="dropdown-flags">
+                    <select class="country-list-access" name = "to">
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="conversion" id="message-box">
+                1 USD = 93.48 INR
+        </div>
+
+        <div class="result-box">
+            AMOUNT= <div id="result-value">93.84 INR</div>
+        </div>
+        <button id="btn">GET AMOUNT</button>
+    </div>
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
